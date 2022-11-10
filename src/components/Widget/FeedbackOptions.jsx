@@ -1,4 +1,5 @@
-import {  Button } from './Widget.styled'
+import { Button } from './Widget.styled'
+import PropTypes from 'prop-types'
 
 export const FeedbackOptions = ({ onLeaveFeedback}) => {
     return (<>
@@ -10,4 +11,8 @@ export const FeedbackOptions = ({ onLeaveFeedback}) => {
     </>
         
     )
+}
+
+FeedbackOptions.propTypes = {
+    onLeaveFeedback: PropTypes.func
 }

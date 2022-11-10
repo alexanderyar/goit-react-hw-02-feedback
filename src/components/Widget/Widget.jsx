@@ -85,9 +85,7 @@ state = {
 
 }
 
-Widget.PropTypes = {
+Widget.propTypes = {
     status: PropTypes.string,
-
-
 }
 
