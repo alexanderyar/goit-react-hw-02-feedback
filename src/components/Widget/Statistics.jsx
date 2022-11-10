@@ -19,6 +19,8 @@ export const Statistics = ({onCountTotalFeedback, onCountPositiveFeedbackPercent
 }
 
 Statistics.propTypes = {
-     stateValue: PropTypes.objectOf(PropTypes.number)
+    stateValue: PropTypes.objectOf(PropTypes.number),
+    onCountTotalFeedback: PropTypes.func,
+    onCountPositiveFeedbackPercentage: PropTypes.func
 }
 
