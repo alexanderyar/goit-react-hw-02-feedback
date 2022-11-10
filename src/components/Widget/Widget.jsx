@@ -1,5 +1,8 @@
 import React from 'react'
 
+import PropTypes from 'prop-types'
+
+
 
 import { WidgetWrapper } from './Widget.styled'
 import { Statistics } from './Statistics'
@@ -53,18 +56,13 @@ state = {
   
     render() {
     
-        
-
-
-     
-        
         return (
             <WidgetWrapper>
                 
                 <Section title="MADE WITH COMPONENT">
                      <Section title="Please leave feedback">
                 
-                    <FeedbackOptions onLeaveFeedback={this.handleFeedbackIncrement} buttonArrayForRender={Object.keys(this.state)} />
+                    <FeedbackOptions onLeaveFeedback={this.handleFeedbackIncrement} />
                 </Section>
                 
                     {this.countTotalFeedback() ?
@@ -84,6 +82,12 @@ state = {
         </WidgetWrapper>
     )
 }
+
+}
+
+Widget.PropTypes = {
+    status: PropTypes.string,
+
 
 }
 

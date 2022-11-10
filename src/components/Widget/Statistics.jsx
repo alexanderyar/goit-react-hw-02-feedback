@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 
 
 import { FeedbackCount} from './Widget.styled'
@@ -15,3 +17,8 @@ export const Statistics = ({onCountTotalFeedback, onCountPositiveFeedbackPercent
         </>
     )
 }
+
+Statistics.propTypes = {
+     stateValue: PropTypes.objectOf(PropTypes.number)
+}
+
