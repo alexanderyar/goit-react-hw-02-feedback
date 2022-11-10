@@ -1,11 +1,10 @@
 import React from 'react'
 
 
-import { Text, WidgetWrapper, NotificationForTheBox } from './Widget.styled'
+import { WidgetWrapper } from './Widget.styled'
 import { Statistics } from './Statistics'
 import { FeedbackOptions } from './FeedbackOptions'
 import { Section } from './SectionTitle'
-import { Box } from './Box'
 import { Notification } from './Notification'
 
 
